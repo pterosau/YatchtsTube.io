@@ -1,202 +1,210 @@
-<html>
-    <head>
-        <title>Deleteapp Demo</title>
-        <style>
-            .color1{
-                background-color: grey;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>DeleteApp</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yachts Software LLC - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <img src="ai.jpg" alt="">
-        <br>
-        <form action="page 2 loading bar.html">
-            <input type="file" id="myFile" name="filename">
-            <input type="submit" value="Delete">
-          </form>
-          <img src="inflation gif.gif" alt="" height="30" width="30">
-          <h1>choose a file to Delete ABOVE</h1>
-
-          <fieldset class="color1">*Please Note this is for Demostrational purposes and is not functional.</fieldset>
-
-
-
-
-
-
-
-
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  
-  
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-<meta name="apple-mobile-web-app-title" content="CodePen">
-
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-
-
-  <title>CodePen - Progress bar animation</title>
-  
-  
-  
-  
-<style>
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #2c303a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 .container {
-  margin: 100px auto;
-  width: 500px;
-  text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.progress {
-  padding: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.progress-bar {
-  height: 18px;
-  background-color: #ee303c;
-  border-radius: 4px;
-  transition: 0.4s linear;
-  transition-property: width, background-color;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.progress-striped .progress-bar {
-  background-color: #FCBC51;
-  width: 100%;
-  background-image: linear-gradient(45deg, #fca311 25%, transparent 25%, transparent 50%, #fca311 50%, #fca311 75%, transparent 75%, transparent);
-  animation: progressAnimationStrike 6s;
+nav ul {
+    list-style-type: none;
 }
 
-@keyframes progressAnimationStrike {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-.progress2 {
-  padding: 6px;
-  border-radius: 30px;
-  background: rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.progress-bar2 {
-  height: 18px;
-  border-radius: 30px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;
-  transition-property: width, background-color;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.progress-moved .progress-bar2 {
-  width: 85%;
-  background-color: #EF476F;
-  animation: progressAnimation 6s;
+#hero {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
 }
 
-@keyframes progressAnimation {
-  0% {
-    width: 5%;
-    background-color: #F9BCCA;
-  }
-  100% {
-    width: 85%;
-    background-color: #EF476F;
-  }
-}
-.progress-bar3 {
-  height: 18px;
-  border-radius: 4px;
-  background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #7DC8E8, #5856d6, #ff2d55);
-  transition: 0.4s linear;
-  transition-property: width, background-color;
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.progress-infinite .progress-bar3 {
-  width: 100%;
-  background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #7DC8E8, #5856d6, #ff2d55);
-  animation: colorAnimation 1s infinite;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes colorAnimation {
-  0% {
-    background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #7DC8E8, #5856d6, #ff2d55);
-  }
-  20% {
-    background-image: linear-gradient(to right, #5ac8fa, #007aff, #7DC8E8, #5856d6, #ff2d55, #4cd964);
-  }
-  40% {
-    background-image: linear-gradient(to right, #007aff, #7DC8E8, #5856d6, #ff2d55, #4cd964, #5ac8fa);
-  }
-  60% {
-    background-image: linear-gradient(to right, #7DC8E8, #5856d6, #ff2d55, #4cd964, #5ac8fa, #007aff);
-  }
-  100% {
-    background-image: linear-gradient(to right, #5856d6, #ff2d55, #4cd964, #5ac8fa, #007aff, #7DC8E8);
-  }
+.btn:hover {
+    background-color: #555;
 }
-</style>
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+section {
+    padding: 50px 0;
+}
 
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
+section p {
+    margin-bottom: 20px;
+}
 
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
+    <i class="fa fa-paper-plane" aria-hidden="true" style="position: absolute;top:800px;left:1010px;z-index: 1;"></i>
+    <p style="position: absolute;top:810px;left:1010px;z-index: 1;">Send message</p>
+    <header>
+        
+        <div class="container">
+            <h1>Yatchts Corp Software LLC:<br><span style="color:red;">What's</span> <span style="color:yellow;">your</span> <span style="color:s;">e<span style=>x</span>pectation?</span></h1>
+            <img src="logo.jpg" alt="" height="100" width="100" style="border-radius:50%;">
+            <nav>
+                <ul>
+                    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">products</a></li>
+                    <li><a href="#investors">Investors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<body translate="no">
-  
+    <section id="hero">
+        <div class="container">
+            <h2><u>Welcome to <span style="background-color: #555;">Yatchts</span> LLC <span style="background-color: #555;color:white;">Soft<span style="color:blue;">ware</span></span></u></h2>
+            <p>whats your e<span>x</span>pectation?</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    <img src="https://www.bing.com/th/id/OGC.169c11293f5c08a325ee1bbc8a0d4cb8?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f1138853%2fscreenshots%2f4834993%2f06_08_gif.gif&ehk=T2vCEtbrYOEadOdzxFWoq%2b2o7pkNph2CZ7nrzUYA6LM%3d" alt="" height="350px" width="350px;" style="position:absolute;top:146px;left:0px;">
 
+    <section id="about">
+        <div class="container">
+            <hr>
+            <h2>About Yachts software LLC</h2>
+            <p>Our mission</p>
+           
+            
+                <ul>
+                    <li>We are mainly a software ,IT company.<Br></p>
+                        <li>we See the potential in simply redesigning alright existing platfroms with better/ viable designs.</li>
+                    <li><p>We dont believe in re-inventing the wheel but simply designing it better</p></li>
+                </ul>
+                
+        </div>
+    </section>
+<hr>
+    <section id="features">
+        <div class="container">
+            <h2>Key products</h2>
+            <ul>
+                <li>Yatchts Tube: a video sharing platfrom similiar to Youtube<span style="color:grey;">*not hosted yet due to bandwith  and storage reasons<br>we currently have
+                     20GB of videos stored on our local cached </span></li>
+                <li ><span title="view more"><a href="Learn about company.html">Response</a>:</span> A Social media sharing platform similiar to Instagram</li>
+                <li>Yatchts Ai: an ai for signing up/creating accounts*dont u just hate manually signing up for accounts?</li>
+                <li><a href="https://yaetchts.github.io/uncle/">Uncle: inspired by Uber</a></li>
+                <li>Freaky storage at a distance: Inspired by Cloud </li>
+                <li>Yatchts OS: inspired BY MicroSoft</li>
+                <li>Yatchts Search engines: Inspired by Google chrome</li>
+                <li><a href="https://pterosau.github.io/deleteapp/">Delete app: inspired BY Internet services</a></li>
+                <li>Vision app store: inspired BY google play store and Apple store etc</li>
+                
+                <li>Open:An app that allows users to tell the world whether they are open or not.More like a messaging app </li>
+                
+                    <li><a href="">Pod-watch</a> A camera system that u install on ur front poach to monitor incoming and out-going activity</li>
+                
+                
+            </ul>
 
-<div class="container">    
-  <div class="progress progress-infinite">
-    <div class="progress-bar3">
-    </div>                       
-  </div> 
-</div>
-    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+        </div>
 
-  
-      <script id="rendered-js">
-/* if you like ❤️ this pen */
-//# sourceURL=pen.js
-    </script>
+    </section>
+<hr>
+    <section id="investors">
+        <div class="container">
+            <h2>Investors</h2>
+            <p>Interested in joining us on our journey to redesign the some software in the tech industry? We welcome partnerships and investments to fuel our growth and innovation.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
 
-  
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+            <form action="contact.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <img src="55.JPG" alt="" style="position: absolute;top:700px;left:1000px;">
 
-
-
-
- 
-<div id="highlighter--hover-tools" style="display: none;">
-    <div id="highlighter--hover-tools--container">
-        <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
-        <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
-        <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
-    </div>
-</div></body></html>
-    </body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yachts Tube. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
